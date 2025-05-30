@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.task-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-header strong {
+    font-size: 18px;
+    color: #3498db;
+}
+
+.task-desc {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.task-status, .task-deadline {
+    font-size: 14px;
+    color: #888;
+}
+
+.task-status span, .task-deadline span {
+    font-weight: bold;
+}
+
+.task-delete-form {
+    display: inline;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.edit-link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+
+.task-stats {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.task-stats p {
+    font-size: 16px;
+    color: #555;
+}
+
+.task-stats strong {
+    font-weight: bold;
+    color: #3498db;
+}
+
+
+.no-tasks {
+    font-size: 16px;
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header {
+    background-color: #3498db;
+    padding: 10px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+
+.main-content {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+.exit {
+    background-color: #b92929;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.exit:hover {
+    background-color: #661a1a;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+input[type="text"],
+textarea,
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus,
+input[type="date"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+
+.form-title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.auth-form button {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+    background-color: #2980b9;
+}
+
+
+.error-message {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
